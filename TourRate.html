@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100&family=Poppins:wght@100;300&family=Radio+Canada&display=swap" rel="stylesheet">
+    <title>Tour Rate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" mt-5 mb-1 border-2">
+        <h2>Tour Rate</h2>
+        <div class="container shadow border-0 mt-5 mb-4" >
+            <form class="row g-3">
+                <div class="mt-4">
+                    <h2>IMG Worlds Of Adventure</h2><hr>
+                </div>
+                <div class="col-md-3">
+                    <label for="transferOptions" class="form-label">Transfer Options</label>
+                    <select id="transferOptions" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Private</option>
+                        <option>Without Transfer</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" id="date" name="date" class="form-control">
+                </div>
+                <div class="col-md-3 ">
+                    <label for="time" class="form-label">Time</label>
+                    <input type="time" id="time" name="time" class="form-control">
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <label for="adult" class="form-label">Adult</label>
+                    <select id="adult" class="form-select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>Upto 99</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="child" class="form-label">Child</label>
+                    <select id="child" class="form-select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>Upto 9</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="infant" class="form-label">Infant</label>
+                    <select id="infant" class="form-select">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="col-md-3" >
+                    <h5 for="totalAmount" class="d-flex justify-content-center form-label">Total Amount</h5>
+                    <h2 for="totalAmount" class="d-flex justify-content-center form-label" style=" color: #18546E;">PKR 00,00.00</h2>
+                </div>
+                <div class="row mt-3 mb-4">
+                    <div class="col-md-6 offset-md-3"><button style="border: 1px solid #18546E; background: #18546E; width: 561px; height: 66px; flex-shrink: 0;"><span style="width: 492px; height: 46px; flex-shrink: 0; color: #FFF; text-align: center; font-family: Inter; font-size: 32px; font-style: normal; font-weight: 600; line-height: normal;">BOOK NOW</span></button></div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="container shadow border-0">
+            <div class="">
+            <div class="mt-5 mb-5 d-flex justify-content-between">
+                <div class="mt-5 ms-3"><span style="color: #1B1B1B; font-family: Inter; font-size: 28px; font-style: normal; font-weight: 400; width: 496px; height: 36px; flex-shrink: 0; line-height: normal;">IMG Worlds of Adventure Tickets</span></div>
+                
+                <div  class="mt-5 ms-3" style="color: #1B1B1B; text-align: center; font-family: Inter; font-size: 22px; font-style: normal; font-weight: 400; line-height: normal; width: 207.518px; height: 24.309px; flex-shrink: 0;">
+                    <span class="me-5 mt-5 mb-5"> Total Amount </span>
+                </div>
+            </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="mb-5 ms-3"><span style="color: #F7441B; font-family: Inter; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal; width: 496px; hight: 36px; flex-shrink: 0;"> Click to select an option </span></div>
+                
+                <div style="color: #18546E; text-align: center; font-family: Inter; font-size: 30px; font-style: normal; font-weight: 700; line-height: normal; width: 199.637px; height: 28.537px; flex-shrink: 0;"> <span class="me-1 mt-5 mb-5"> PKR 00,00.00 </span>
+                </div>
+            </div>
+
+            <div class="row mt-3 mb-4 pb-4">
+                <div class="col-md-6 offset-md-3"><button class="mb-4" style="width: 561px; border: 1px solid #18546E; height: 66px; flex-shrink: 0;"><span style="color: #18546E; width: 492px; height: 46px; flex-shrink: 0; text-align: center; font-family: Inter; font-size: 32px; font-style: normal; font-weight: 600; line-height: normal;">BOOK NOW</span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> 
+
+
+</body>
+</html>

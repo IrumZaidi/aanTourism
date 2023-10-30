@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/checkout.css">
+  <title>Checkout</title>
+</head>
+
+<body>
+
+
+  <!-- <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col-7">
+                <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col-5">
+                <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+        </div>
+    </div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-7 mt-5 mb-4 ">
+        <div class="checkoutHeading fs-1">Checkout</div>
+        <div class="guestInfo mb-5 fs-3">Guest Information</div>
+        <div class="infoFields">
+          <div class="mb-3 rounded-0">
+            <input type="text" class="form-control mt-3 inputField fs-5" id="firstName" placeholder="First Name">
+            <input type="text" class="form-control mt-3 inputField  fs-5" id="lastName" placeholder="Last Name">
+            <input type="number" class="form-control mt-3 inputField fs-5" id="phoneNumber" placeholder="Phone Number">
+            <input type="email" class="form-control mt-3  inputField  fs-5" id="email" placeholder="Email">
+            <input type="email" class="form-control mt-3 inputField  fs-5" id="confirmEmail"
+              placeholder="Confirm Email">
+
+            <div class="guestInfo mt-5 fs-3 mb-4">Payment method</div>
+            <div class="infoFields">
+              <div class="mb-3">
+                <div class="cardInputField iconic-input-field d-flex ps-2">
+                  <input type="text"
+                    class="cardInputFieldText form-control fs-4 fw-normal border-0 bg-transparent shadow-none"
+                    value="Credit Card Payment" />
+                  <img src="img/CreditCard.png" class="align-self-center pe-2" alt="search" />
+                </div>
+                <label class="inputFieldLabel fs-4 form-label mt-3">Card Number</label>
+                <input type="number" class="form-control inputField fs-5" id="cardNumber"
+                  placeholder="0000 0000 0000 0000">
+                <label class="inputFieldLabel fs-4 form-label mt-3">Expiry</label>
+                <input type="date" class="form-control fs-5 inputField " id="expiray">
+                <label class="inputFieldLabel fs-4 form-label  mt-3">CVC</label>
+                <input type="number" class="form-control fs-5 inputField " id="cvc" placeholder="CVC">
+              </div>
+              <input type="text" class="form-control fs-5 inputField couponCode" id="couponCode"
+                placeholder="Enter Coupon Code...">
+              <div class=" mb-4 mt-3">
+                <div class=" fs-2 d-flex justify-content-between">
+                  <div class=" totalPayment"> Total Payment </div>
+                  <div class=" totalPayment fw-bold"> AED. 000.00 </div>
+                </div>
+              </div>
+              <div class="mb-3 mt-2 form-check fs-5">
+                <input type="checkbox" class="form-check-input" id="TermsAndConditions">
+                <label class="form-check-label" for="TermsAndConditions">Accept Our Terms &
+                  Conditions</label>
+              </div>
+              <div class="mb-5 mt-3">
+                <div type="button" class="confirmAndPay mt-5 mb-4 fs-3 p-2" data-bs-toggle="modal"
+                  data-bs-target="#confirmAndPayButton">Confirm and Pay</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+
+      <!-- Cart Card -->
+
+      <div class="col-5 mb-5">
+        <div class="cart_items_list mt-5">
+          <div class="card m-3 cart_item">
+            <div class="card-header p-0 m-0 border-0 bg-transparent">
+              <div class="imageHeader">
+                <img src="img/cart_img.png" class="card-img-top" alt="...">
+                <!-- <div><img src="img/trash.png"></div> -->
+                <div class="imageText ps-4 fs-3">IMG Worlds of Adventure Tickets</div>
+                
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="card-body fs-5">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <div>Date: <span>DAY, Month Date, Year</span></div>
+                <div>Transfer: <span>DD/MM/YYY</span></div>
+                <div>Passenger(s): <span>2 Adults,1 Childern</span></div>
+                <div>Cancellation: <span>Non refundable</span></div>
+                <div class="cartTotal fs-3 mt-3">
+                  <div>Total Payment</div>
+                  <div>AED. 000.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3 cart_item mt-5">
+            <div class="imageHeader">
+              <img src="img/cart_img.png" class="card-img-top" alt="...">
+              <div class="imageText fs-3">IMG Worlds of Adventure Tickets</div>
+            </div>
+            <div class="p-3">
+              <div class="card-body fs-5">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <div>Date: <span>DAY, Month Date, Year</span></div>
+                <div>Transfer: <span>DD/MM/YYY</span></div>
+                <div>Passenger(s): <span>2 Adults,1 Childern</span></div>
+                <div>Cancellation: <span>Non refundable</span></div>
+                <div class="cartTotal fs-3 mt-3">
+                  <div>Total Payment</div>
+                  <div>AED. 000.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_items_list mt-5">
+            <div class="card m-3 cart_item">
+              <div class="imageHeader">
+                <img src="img/cart_img.png" class="card-img-top" alt="...">
+                <div class="imageText fs-3">IMG Worlds of Adventure Tickets</div>
+              </div>
+              <div class="p-3">
+                <div class="card-body fs-5">
+                  <!-- <h5 class="card-title">Card title</h5> -->
+                  <div>Date: <span>DAY, Month Date, Year</span></div>
+                  <div>Transfer: <span>DD/MM/YYY</span></div>
+                  <div>Passenger(s): <span>2 Adults,1 Childern</span></div>
+                  <div>Cancellation: <span>Non refundable</span></div>
+                  <div class="cartTotal fs-3 mt-3">
+                    <div>Total Payment</div>
+                    <div>AED. 000.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal  -->
+    <div class="modal fade" id="confirmAndPayButton" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="confirmAndPayButtonLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class=" close_button btn-close border " data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body mb-5 ">
+            <div class="container-fluid  ">
+              <div class="">
+                <div class="row d-flex justify-content-center">
+                  <div class="logo col-md-12 d-flex justify-content-center"><img src="img/logo.png"></div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="thankYou mt-4 col-md-12 fs-1 fw-bold fw-bolder d-flex justify-content-center">Thank You!
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class=" caption col-md-10 fs-6">We send order details and invoice On your registered Email.</div>
+                </div>
+                <div class="row mt-5 ">
+                  <a href="#" class="d-flex justify-content-center">
+                    <div type="button" class="viewOrderDetails col-md-6 p-2 fs-5">VIEW ORDER DETAILS</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
